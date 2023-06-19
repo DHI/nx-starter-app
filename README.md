@@ -17,7 +17,7 @@ Make sure to use `node` version 18 or later. Also `pnpm` is favored over `npm`.
 `npm install --global pnpm`
 
 ### Install Nx cli
-`pnpm install --global nx@latest `
+`npm install --global nx@latest `
 
 ### Install VS Code Nx Console extension
 Visit Visual Studio marketplace and install the [Nx Console](https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console) UI extension.
