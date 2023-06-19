@@ -10,6 +10,7 @@ It is preconfigured to use the following tech stack:
 3. [MobX v6.x](https://mobx.js.org/README.html) - for state management.
 4. [React IoC](https://github.com/gnaeus/react-ioc) - a very small heirarchical dependency injection library for React
 5. [React Router v6.x](https://reactrouter.com/en/main) - a bare-bones routing example is presented in the application which allows for protected routes. 
+6. [Echarts for React](https://github.com/hustcc/echarts-for-react) - React wrapper for [Echarts](https://echarts.apache.org/en/index.html)
 ## Installation
 Make sure to use `node` version 18 or later. Also `pnpm` is favored over `npm`.
 
