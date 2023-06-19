@@ -18,6 +18,10 @@ Make sure to use `node` version 18 or later. Also `pnpm` is favored over `npm`.
 
 ### Install Nx cli
 `pnpm install --global nx@latest `
+
+### Install VS Code Nx Console extension
+Visit Visual Studio marketplace and install the [Nx Console](https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console) UI extension.
+
 ### Clone the repository 
 `git clone https://github.com/DHI/nx-starter-app.git <project_name>`
 
@@ -36,3 +40,8 @@ Run `nx graph` to see a diagram of the dependencies of the projects.
 ## Further help
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
+
+In particular, read through the [React Standalone Tutorial (parts 1 & 2)](https://nx.dev/tutorials/react-standalone-tutorial) for a brief tutorial.
+
+### Useful Nx links
+[Nx Youtube channel](https://www.youtube.com/@nxdevtools)  videos including [React Standalone Applications with Nx](https://www.youtube.com/watch?v=Q1WxHhmd7BU)
