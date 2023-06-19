@@ -1,7 +1,7 @@
 import { AppRoute } from './routes/AppRoutes';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
-import Maps from './pages/Maps';
+import About from './pages/About';
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
 
@@ -16,14 +16,14 @@ const routes: AppRoute[] = [
   {
     path: '/dashboard',
     element: <Dashboard />,
-    name: 'Dashboard',
+    name: 'Dashboard (Protected)',
     show: true,
     protected: true,
   },
   {
-    path: '/maps',
-    element: <Maps />,
-    name: 'Maps',
+    path: '/about',
+    element: <About />,
+    name: 'About',
     show: true,
     protected: false,
   },
