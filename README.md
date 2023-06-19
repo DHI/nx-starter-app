@@ -19,7 +19,7 @@ Make sure to use `node` version 18 or later. Also `pnpm` is favored over `npm`.
 ### Install Nx cli
 `pnpm install --global nx@latest `
 ### Clone the repository 
-`git clone https://github.com/orgs/DHI/nx-starter-app <project_name>`
+`git clone https://github.com/DHI/nx-starter-app.git <project_name>`
 
 `cd <project_name>`
 
