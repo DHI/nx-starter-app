@@ -7,7 +7,9 @@
 It is preconfigured to use the following tech stack:
 1. [Vite](https://vitejs.dev) - is a modern front-end build tool providing instant server start with on-demand file serving over native ESM and no bundling required, lightning-fast hot module replacement (HMR) that maintains speed regardless of app size, rich features including out-of-the-box support for TypeScript, JSX, CSS, and more.
 2. [MUI v5.x](https://mui.com/material-ui/getting-started/overview/) - is an open-source React component library that implements Google's Material Design providing comprehensive collection of prebuilt components out of the box. This demo application also comes with a SeaportOPX customized theme.
-
+3. [MobX v6.x](https://mobx.js.org/README.html) - for state management.
+4. [React IoC](https://github.com/gnaeus/react-ioc) - a very small heirarchical dependency injection library for React
+5. [React Router v6.x](https://reactrouter.com/en/main) - a bare-bones routing example is presented in the application which allows for protected routes. 
 ## Installation
 Make sure to use `node` version 18 or later. Also `pnpm` is favored over `npm`.
 
@@ -30,10 +32,6 @@ Run `nx serve rename-me` for a dev server. Navigate to http://localhost:4200/. T
 ## Understand this workspace
 
 Run `nx graph` to see a diagram of the dependencies of the projects.
-
-## Remote caching
-
-Run `npx nx connect-to-nx-cloud` to enable [remote caching](https://nx.app) and make CI faster.
 
 ## Further help
 
