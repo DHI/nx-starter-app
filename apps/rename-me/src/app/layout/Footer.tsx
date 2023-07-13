@@ -15,15 +15,11 @@ const StyledFooter = styled(Box)(({ theme }) => {
 
 const Footer = () => {
   const themeDataStore = useInstance(ThemeDataStore);
-
-  console.log(themeDataStore.mode);
   return (
     <StyledFooter>
-      <Paper>
-        <Toolbar>
-          <footer>Footer</footer>
-        </Toolbar>
-      </Paper>
+      <Box>
+        <footer>Footer</footer>
+      </Box>
     </StyledFooter>
   );
 };
