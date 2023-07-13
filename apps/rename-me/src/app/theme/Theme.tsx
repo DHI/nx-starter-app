@@ -17,16 +17,16 @@ const darkTheme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      light: DHI_COLORS.ACTIONBLUE_X_LIGHT,
-      main: DHI_COLORS.ACTIONBLUE_LIGHT,
-      dark: DHI_COLORS.ACTIONBLUE_DEFAULT,
-      contrastText: DHI_COLORS.BRANDBLUE_DARK,
+      light: DHI_COLORS.PRIMARY_MAIN,
+      main: DHI_COLORS.PRIMARY_LIGHT,
+      dark: DHI_COLORS.PRIMARY_DARK,
+      contrastText: DHI_COLORS.PRIMARY_CONTRAST,
     },
     secondary: {
-      light: DHI_COLORS.BRANDBLUE_X_LIGHT,
-      main: DHI_COLORS.BRANDBLUE_LIGHT,
-      dark: DHI_COLORS.BRANDBLUE_DEFAULT,
-      contrastText: DHI_COLORS.BRANDBLUE_DARK,
+      light: DHI_COLORS.SECONDARY_LIGHT,
+      main: DHI_COLORS.SECONDARY_MAIN,
+      dark: DHI_COLORS.SECONDARY_DARK,
+      contrastText: DHI_COLORS.SECONDARY_CONTRAST,
     },
     error: {
       light: DHI_COLORS.PINK_X_LIGHT,
@@ -52,35 +52,43 @@ const darkTheme = createTheme({
       dark: DHI_COLORS.GREEN_DEFAULT,
       contrastText: DHI_COLORS.BRANDBLUE_DARK,
     },
+
     text: {
       primary: DHI_COLORS.WHITE,
-      secondary: DHI_COLORS.WHITE,
-      disabled: DHI_COLORS.GREY700,
-      // hint: DHI_COLORS.WHITE,
+      secondary: DHI_COLORS.GREY200,
+      disabled: DHI_COLORS.GREY500,
     },
     background: {
-      default: DHI_COLORS.BLACK,
-      paper: DHI_COLORS.BLACK,
+      default: DHI_COLORS.GREY800,
+      paper: DHI_COLORS.GREY800,
     },
     divider: DHI_COLORS.GREY700,
     grey: {
-      50: DHI_COLORS.GREY900,
-      100: DHI_COLORS.GREY800,
-      200: DHI_COLORS.GREY700,
-      300: DHI_COLORS.GREY600,
-      400: DHI_COLORS.GREY500,
-      500: DHI_COLORS.GREY400,
-      600: DHI_COLORS.GREY300,
-      700: DHI_COLORS.GREY200,
-      800: DHI_COLORS.GREY100,
-      900: DHI_COLORS.GREY50,
-      A100: DHI_COLORS.GREY500,
-      A200: DHI_COLORS.GREY300,
-      A400: DHI_COLORS.GREY200,
-      A700: DHI_COLORS.GREY50,
+      50: DHI_COLORS.GREY50,
+      100: DHI_COLORS.GREY100,
+      200: DHI_COLORS.GREY200,
+      300: DHI_COLORS.GREY300,
+      400: DHI_COLORS.GREY400,
+      500: DHI_COLORS.GREY500,
+      600: DHI_COLORS.GREY600,
+      700: DHI_COLORS.GREY700,
+      800: DHI_COLORS.GREY800,
+      900: DHI_COLORS.GREY900,
+      A100: DHI_COLORS.GREYA100,
+      A200: DHI_COLORS.GREYA200,
+      A400: DHI_COLORS.GREYA400,
+      A700: DHI_COLORS.GREYA700,
     } as Color,
   },
   components: {
+    MuiToolbar: {
+      styleOverrides: {
+        root: {
+          backgroundColor: DHI_COLORS.GREY900,
+          color: DHI_COLORS.WHITE,
+        },
+      },
+    },
     MuiCssBaseline: {
       styleOverrides: {
         body: darkScrollbar(),
@@ -101,16 +109,16 @@ const lightTheme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      light: DHI_COLORS.ACTIONBLUE_LIGHT,
-      main: DHI_COLORS.ACTIONBLUE_DEFAULT,
-      dark: DHI_COLORS.ACTIONBLUE_DARK,
-      contrastText: DHI_COLORS.WHITE,
+      light: DHI_COLORS.PRIMARY_LIGHT,
+      main: DHI_COLORS.PRIMARY_MAIN,
+      dark: DHI_COLORS.PRIMARY_DARK,
+      contrastText: DHI_COLORS.PRIMARY_CONTRAST,
     },
     secondary: {
-      light: DHI_COLORS.BRANDBLUE_LIGHT,
-      main: DHI_COLORS.BRANDBLUE_DEFAULT,
-      dark: DHI_COLORS.BRANDBLUE_DARK,
-      contrastText: DHI_COLORS.WHITE,
+      light: DHI_COLORS.SECONDARY_LIGHT,
+      main: DHI_COLORS.SECONDARY_MAIN,
+      dark: DHI_COLORS.SECONDARY_DARK,
+      contrastText: DHI_COLORS.SECONDARY_CONTRAST,
     },
     error: {
       light: DHI_COLORS.PINK_LIGHT,
@@ -137,8 +145,8 @@ const lightTheme = createTheme({
       contrastText: DHI_COLORS.WHITE,
     },
     text: {
-      primary: DHI_COLORS.BRANDBLUE_DARK,
-      secondary: DHI_COLORS.BRANDBLUE_DARK,
+      primary: DHI_COLORS.GREY900,
+      secondary: DHI_COLORS.GREY700,
       disabled: DHI_COLORS.GREY200,
       // hint: DHI_COLORS.BRANDBLUE_DARK,
     },
@@ -158,13 +166,21 @@ const lightTheme = createTheme({
       700: DHI_COLORS.GREY700,
       800: DHI_COLORS.GREY800,
       900: DHI_COLORS.GREY900,
-      A100: DHI_COLORS.GREY50,
-      A200: DHI_COLORS.GREY200,
-      A400: DHI_COLORS.GREY300,
-      A700: DHI_COLORS.GREY500,
+      A100: DHI_COLORS.GREYA100,
+      A200: DHI_COLORS.GREYA200,
+      A400: DHI_COLORS.GREYA400,
+      A700: DHI_COLORS.GREYA700,
     } as Color,
   },
   components: {
+    MuiToolbar: {
+      styleOverrides: {
+        root: {
+          backgroundColor: DHI_COLORS.GREY900,
+          color: DHI_COLORS.WHITE,
+        },
+      },
+    },
     MuiLink: {
       styleOverrides: {
         underlineHover: {

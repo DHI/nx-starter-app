@@ -42,7 +42,7 @@ const Header = () => {
 
   return (
     <StyledHeader>
-      <AppBar>
+      <AppBar color='default'>
         <Toolbar>
           <IconButton
             edge="start"
@@ -56,7 +56,7 @@ const Header = () => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             {TITLE}
           </Typography>
-          <IconButton onClick={onClickMode}>
+          <IconButton onClick={onClickMode} color="inherit">
             {themeDataStore.mode === 'dark' ? <Brightness7 /> : <Brightness4 />}
           </IconButton>
         </Toolbar>
