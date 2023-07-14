@@ -97,7 +97,7 @@ const darkTheme = createTheme({
     MuiLink: {
       styleOverrides: {
         underlineHover: {
-          color: DHI_COLORS.ACTIONBLUE_LIGHT,
+          color: DHI_COLORS.PRIMARY_LIGHT,
         },
       },
     },
@@ -183,7 +183,7 @@ const lightTheme = createTheme({
     MuiLink: {
       styleOverrides: {
         underlineHover: {
-          color: DHI_COLORS.ACTIONBLUE_LIGHT,
+          color: DHI_COLORS.PRIMARY_MAIN,
         },
       },
     },
