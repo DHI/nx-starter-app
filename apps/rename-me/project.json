@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@nx/vite:build",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "defaultConfiguration": "production",
       "options": {
         "outputPath": "dist/apps/rename-me"
@@ -24,7 +26,8 @@
       "executor": "@nx/vite:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "rename-me:build"
+        "buildTarget": "rename-me:build",
+        "proxyConfig": "apps/rename-me/proxy.conf.json"
       },
       "configurations": {
         "development": {
@@ -54,7 +57,9 @@
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["{workspaceRoot}/coverage/apps/rename-me"],
+      "outputs": [
+        "{workspaceRoot}/coverage/apps/rename-me"
+      ],
       "options": {
         "passWithNoTests": true,
         "reportsDirectory": "../../coverage/apps/rename-me"
@@ -62,9 +67,13 @@
     },
     "lint": {
       "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["apps/rename-me/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": [
+          "apps/rename-me/**/*.{ts,tsx,js,jsx}"
+        ]
       }
     }
   },

@@ -23,14 +23,18 @@ const StyledHeader = styled(Box)(({ theme }) => ({
   ...theme.mixins.toolbar,
 }));
 
-const Header = () => {
+type HeaderProps = {
+  message: string;
+};
+
+const Header = ({ message }: HeaderProps) => {
   const [appDataStore, themeDataStore] = useInstances(
     AppDataStore,
-    ThemeDataStore
+    ThemeDataStore,
   );
 
   const onMenuButtonClick = (
-    event: SyntheticEvent<HTMLButtonElement, Event>
+    event: SyntheticEvent<HTMLButtonElement, Event>,
   ): void => {
     console.debug('onMenuButtonClick', event);
     appDataStore.setLeftSideDrawerOpen(true);
@@ -42,7 +46,7 @@ const Header = () => {
 
   return (
     <StyledHeader>
-      <AppBar color='default'>
+      <AppBar color="default">
         <Toolbar>
           <IconButton
             edge="start"
@@ -61,6 +65,7 @@ const Header = () => {
           </IconButton>
         </Toolbar>
       </AppBar>
+      <Typography sx={{ marginTop: '64px' }}>{message}</Typography>
     </StyledHeader>
   );
 };

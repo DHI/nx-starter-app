@@ -10,14 +10,27 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"],
-      "@mytest/utils": ["libs/env-utils/src/index.ts"]
+      "@mui/styled-engine": [
+        "./node_modules/@mui/styled-engine-sc"
+      ],
+      "@mytest/utils": [
+        "libs/env-utils/src/index.ts"
+      ],
+      "@nx-rename-me/api-interface": [
+        "libs/api-interface/src/index.ts"
+      ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }
